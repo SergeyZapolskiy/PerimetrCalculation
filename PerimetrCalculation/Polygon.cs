@@ -11,6 +11,7 @@ namespace PerimetrCalculation
             PointAll.Add(point1);
             PointAll.Add(point2);
             PointAll.Add(point3);
+            _nameShape = "triangle";
         }
 
         public Polygon(Point point1, Point point2, Point point3, Point point4)
@@ -19,6 +20,7 @@ namespace PerimetrCalculation
             PointAll.Add(point2);
             PointAll.Add(point3);
             PointAll.Add(point4);
+            _nameShape = "quadrangle";
         }
 
         public Polygon(Point point1, Point point2, Point point3, Point point4, Point point5)
@@ -28,8 +30,16 @@ namespace PerimetrCalculation
             PointAll.Add(point3);
             PointAll.Add(point4); 
             PointAll.Add(point5);
+            _nameShape = "pentagon";
         }
 
+        private string _nameShape;
+
+        public string NameShape
+        {
+            get => _nameShape;
+        }
+        
         private List<Point> _pointAll = new List<Point>();
 
         public List<Point> PointAll

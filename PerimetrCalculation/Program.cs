@@ -17,7 +17,8 @@ namespace PerimetrCalculation
             double p3 = polygon3.Perimeter();
             double p4 = polygon4.Perimeter();
             double p5 = polygon5.Perimeter();
-            Console.WriteLine($"Perimeter3 = {p3}\n Perimeter4 = {p4}\n Perimeter5 = {p5}");
+            Console.WriteLine($"Perimeter of {polygon3.NameShape} = {p3}\n" +
+                $"Perimeter of {polygon4.NameShape} = {p4}\nPerimeter of {polygon5.NameShape} = {p5}");
         }
     }
 }
